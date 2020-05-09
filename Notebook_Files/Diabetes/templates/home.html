@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Diabetes</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>
+		<div class = "login" style="text-align: center;">
+			<font color="blue">
+				Ensemble techniques on Scientific Data
+			</font>
+		</div>
+	</h1>
+	<hr>
+	<br>
+	<h3 text-align="center">Enter the values to predict Diabetes</h3>
+	<div class="container" align="center">
+		<div class="row">
+			<div class="col-6">
+				<form method="POST" action="/predict">
+					<div class="form-group">
+						<label for="Pregnancies">Pregnancies:</label>
+						<input type="text" name="Pregnancies">&nbsp&nbsp
+						<label for="Glucose">Glucose:</label>
+						<input type="text" name="Glucose"><br>
+						<label for="BloodPressure">BloodPressure:</label>
+						<input type="text" name="BloodPressure">&nbsp&nbsp&nbsp
+						<label for="SkinThickness">SkinThickness:</label>
+						<input type="text" name="SkinThickness"><br>
+						<label for="Insulin">Insulin:</label>
+						<input type="text" name="Insulin">&nbsp&nbsp&nbsp
+						<label for="BMI">BMI:</label>
+						<input type="text" name="BMI"><br>
+						<label for="DiabetesPedigreeFunction">DiabetesPedigreeFunction:</label>
+						<input type="text" name="DiabetesPedigreeFunction">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<label for="Age">Age:</label>
+						<input type="text" name="Age"><br>
+					</div>
+					<input class = "btn btn-primary btn-block btn-large" type="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
